@@ -174,6 +174,7 @@ export default {
     if (this.user.token) {
       this.user.isAuthenticated = true;
     }
+    console.log(this.user)
   },
 
   methods: {

@@ -61,7 +61,12 @@ export default {
   },
   computed: {
     publishedPosts() {
-      return this.posts.filter((post) => post.isPublished);
+      if(this.posts){
+        return this.posts.filter((post) => post.isPublished);
+      }else{
+        return [];
+      }
+      
     },
   },
   methods: {
